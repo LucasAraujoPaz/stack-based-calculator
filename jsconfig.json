@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "checkJs": true,
+        "allowJs": true,
+        "alwaysStrict": true,
+        "target": "ESNext",
+        "allowUnreachableCode": false,
+        "noImplicitAny": true,
+    },
+}

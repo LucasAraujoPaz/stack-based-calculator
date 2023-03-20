@@ -39,7 +39,7 @@ class Compiler {
         if (!prefix) throw new Error("Expression expected");
         prefix(this);
 
-        while (precedence <= (this.#current()?.parseRule.infixPrecedence ?? -1)) {
+        while (precedence <= (this.#current()?.parseRule.infixPrecedence || -1)) {
             const operator = this.#consume();
             const infix = operator?.parseRule.infix;
             if (!infix) throw new Error("Operator expected");
